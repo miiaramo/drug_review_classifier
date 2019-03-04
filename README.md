@@ -1,2 +1,2 @@
-# drug_review_classifier
+# Drug review classifier
 A classifier for sentiment analysis over drug reviews.
