@@ -8,12 +8,14 @@ from sklearn.metrics import accuracy_score
 vectorizer = CountVectorizer()
 
 def download_data():
+  
   train = pd.read_csv('./data/drugsComTrain_raw.tsv', sep='\t')
   test = pd.read_csv('./data/drugsComTest_raw.tsv', sep='\t')
   return train, test
 
 
 def create_labelset(train):
+
   y_train = train['rating']
   y_train = y_train.mask((y_train < 4), -1)
   y_train = y_train.mask((y_train > 3) & (y_train < 8), 0)
