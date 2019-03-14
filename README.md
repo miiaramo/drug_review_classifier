@@ -25,4 +25,4 @@ A classifier for sentiment analysis over drug reviews.
 
 ### Results
 
-- The model's accuracy is currenty around 70%
+- The model's accuracy is currently around 70%
